@@ -8,7 +8,7 @@ def soma_numeros():
         resultado = num1 + num2
         messagebox.showinfo("Resultado", f"0 quociente é: {resultado}")
     except ValueError:
-        messagebox.showinfo("Erro", "Por favor, insira números válidos.")
+        messagebox.showerror("Erro", "Por favor, insira números válidos.")
 
 def sub_numeros():
     try:
@@ -17,7 +17,7 @@ def sub_numeros():
         resultado = num1 - num2
         messagebox.showinfo("Resultado", f"0 quociente é: {resultado}")
     except ValueError:
-        messagebox.showinfo("Erro", "Por favor, insira números válidos.")
+        messagebox.showerror("Erro", "Por favor, insira números válidos.")
 
 def mult_numeros():
     try:
@@ -40,7 +40,7 @@ def div_numeros():
         messagebox.showerror("Erro", "Divisão por zero não é permitida.")
 
 janela = tk.Tk()
-janela.title("Calculadora de Divisão")
+janela.title("CalculadoraPy")
 
 label_num1 = tk.Label(janela, text="Numero1:")
 label_num1.grid(row=0, column=0, padx=10, pady=5, sticky="e")
@@ -60,7 +60,7 @@ botao_div.grid(row=2, columnspan=2, padx=100, pady=1)
 botao_mult = tk.Button(janela, text="Multiplicar", command=mult_numeros)
 botao_mult.grid(row=2, columnspan=3, padx=250, pady=1)
 
-botao_soma = tk.Button(janela, text="Soma", command=soma_numeros)
+botao_soma = tk.Button(janela, text="Somar", command=soma_numeros)
 botao_soma.grid(row=3, columnspan=2, padx=10, pady=1)
 
 janela.mainloop()
