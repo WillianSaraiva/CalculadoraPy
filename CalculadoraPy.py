@@ -54,13 +54,16 @@ label_num2.grid(row=1, column=0, padx=10, pady=5, sticky="e")
 entry_num2 = tk.Entry(janela)
 entry_num2.grid(row=1, column=1, padx=10, pady=5)
 
-botao_div = tk.Button(janela, text="Dividir", command=div_numeros)
+botao_div = tk.Button(janela, text="Divisão", command=div_numeros)
 botao_div.grid(row=2, columnspan=2, padx=100, pady=1)
 
-botao_mult = tk.Button(janela, text="Multiplicar", command=mult_numeros)
-botao_mult.grid(row=2, columnspan=3, padx=250, pady=1)
+botao_mult = tk.Button(janela, text="Multiplicação", command=mult_numeros)
+botao_mult.grid(row=2, columnspan=3, padx=280, pady=1)
 
-botao_soma = tk.Button(janela, text="Somar", command=soma_numeros)
-botao_soma.grid(row=3, columnspan=2, padx=10, pady=1)
+botao_soma = tk.Button(janela, text="Subtração", command=sub_numeros)
+botao_soma.grid(row=3, columnspan=3, padx=100, pady=1)
+
+botao_soma = tk.Button(janela, text="Soma", command=soma_numeros)
+botao_soma.grid(row=3, columnspan=2, padx=100, pady=1)
 
 janela.mainloop()
